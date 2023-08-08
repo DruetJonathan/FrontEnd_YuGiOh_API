@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+body {
+  font-family: var(--font-family);
+}
+/* Pour toutes les balises existantes */
+@layer base {
+  h3{
+    @apply font-bold italic;
+  }
+  body{
+    @apply bg-primary-100;
+  }
+
+}
+
+/*Pour nos classes persos*/
+@layer components {
+  .btn {
+    @apply m-1;
+  }
+    //&.primary {
+    //  @apply bg-tertiary-300 text-white;
+    //  &:hover{
+    //    @apply bg-tertiary-500;
+    //  }
+    //}
+
+  .card{
+    @apply shadow-2xl
+  }
+}
+
+

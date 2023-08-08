@@ -1,0 +1,19 @@
+
+<div id="container">
+  <div *ngFor="let monster of monsterlist.data; let i = index" class="card">
+  <div class="leftContainer">
+    <img src="{{monster.card_images[0].image_url}}" alt="">
+  </div>
+    <div class="rightContainer">
+      <h3>{{monster.name}}</h3>
+      <p>{{monster.desc}}</p>
+
+    </div>
+  </div>
+</div>
+<div class="containerButton">
+<!--  <button (click)="downCardLimit()" class="btn primary">Previous</button>-->
+<!--  <button (click)="increaseCardLimit()" class="btn primary">Next</button>-->
+  <p-button label="Previous" icon="pi pi-check" styleClass="p-button" class="btn" (click)="downCardLimit()"></p-button>
+  <p-button label="Next" icon="pi pi-check" styleClass="p-button" class="btn" (click)="increaseCardLimit()"></p-button>
+</div>
